@@ -1,7 +1,10 @@
-let vl = document.querySelector("#valo");
-let vlr = document.querySelector("#valor");
-let soma = vl + vlr;
+//let vl = document.querySelector("#valo");
+//let vlr = document.querySelector("#valor");
+//let soma = Number(vl.textContent) + Number(vlr.textContent);
+//let somas = 10 + 30;
 
+//alert(soma);
 
-alert("a soma é" + vlr.textContent);
+let num = document.querySelectorAll(".vlentrada");
+alert(num);
 
