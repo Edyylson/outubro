@@ -5,6 +5,4 @@
 
 //alert(soma);
 
-let num = document.querySelectorAll(".vlentrada");
-alert(num);
 
