@@ -8,16 +8,17 @@ const saida = document.querySelectorAll(".vlsaida");
 const BdGastos = document.getElementsByClassName("gastos");
 
 
-//for (let i = 0; i < 8; i++) {
 
-
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 20; i++) {
 
   try {
-    if (entrada[i].innerHTML > 0) {
+
+
+    if (entrada[i].innerHTML || saida.innerHTML > 0) {
       soma = Number(entrada[i].textContent) + soma;
       somaSaida = Number(saida[i].textContent) + somaSaida;
     }
+
   } catch { break };
 
 }
