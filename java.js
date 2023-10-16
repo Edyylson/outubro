@@ -28,7 +28,7 @@ for (let i = 0; i < 20; i++) {
 // ATRIBUINDO VALORES AS VARIAVEIS DE DOCUMENTOS DOM.
 cxEntrada.innerHTML = soma
 cxSaida.innerHTML = somaSaida
-cxSaldo.innerHTML = Math.ceil(Number(cxEntrada.innerHTML) - Number(cxSaida.innerHTML) + 434);
+cxSaldo.innerHTML = Math.ceil(Number(cxEntrada.innerHTML) - Number(cxSaida.innerHTML) + 317);
 
 //FORMATAÇÃO DOS VALORES EM MOEDAS BR;
 cxEntrada.innerHTML = soma.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
