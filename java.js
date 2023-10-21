@@ -11,7 +11,7 @@ const BdGastos = document.getElementsByClassName("gastos");
 
 //LOOP SOMAR VALORES ENTRADAS, SAIDAS, E SALDO PARA AS VARIAVEIS AUTOMATICAMENTE
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 22; i++) {
   //TRY E CATCH SÃO PARA TRATAMENTOS DE ERRO;
   try {
 
@@ -19,6 +19,7 @@ for (let i = 0; i < 20; i++) {
     if (entrada[i].innerHTML || saida.innerHTML > 0) {
       soma = Number(entrada[i].textContent) + soma;
       somaSaida = Number(saida[i].textContent) + somaSaida;
+
     }
 
   } catch { break }; //BREAK É PARA FINALIZAR LOOP.
@@ -31,6 +32,8 @@ cxSaida.innerHTML = somaSaida
 cxSaldo.innerHTML = Math.ceil(Number(cxEntrada.innerHTML) - Number(cxSaida.innerHTML) + 317);
 
 //FORMATAÇÃO DOS VALORES EM MOEDAS BR;
+
+
 cxEntrada.innerHTML = soma.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 cxSaida.innerHTML = somaSaida.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 cxSaldo.innerHTML = "R$" + "" + " " + cxSaldo.innerHTML;
