@@ -1,4 +1,7 @@
 
+
+
+/*
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -11,7 +14,7 @@ var con = mysql.createConnection({
 con.connect(function (err) {
   if (err) throw err;
   console.log("Connected!");
-});
+});*/
 
 
 
@@ -64,3 +67,5 @@ cxSaldo.innerHTML = "R$" + "" + " " + cxSaldo.innerHTML;
 }
 
 let chamarFunction = somarValores(300)*/
+
+
