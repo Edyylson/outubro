@@ -1,3 +1,4 @@
+
 //DECLARANDO VARIAVEIS;
 
 let soma = 0;
